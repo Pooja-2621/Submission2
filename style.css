@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    height: 70px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar img{
+    height: 40px;
+}
+.nav-options {
+    display: flex;
+    align-items: center;
+}
+.nav-options a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: black;
+    font-weight: 600;
+}
+.nav-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 244, 244);
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.nav-search input{
+    width: 300px;
+    border: none;
+    background-color: rgb(248, 244, 244);  
+}
+.nav-search i{
+    width:30px;  
+}
+.profile{
+    display: inline-block;
+    position: relative;
+}
+.profile button{
+    border: none;
+    background-color: white;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    overflow: auto;
+}
+.profile:hover .dropdown{
+    display: block;
+}
+.dropdown a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0px 0px 20px 40px;
+}
+.wishlist a, .bag a{
+    text-decoration: none;
+    color: black;
+}
+.hero{
+    height:450px;
+    width: 98%;
+    background-image: url("hero.png");
+    background-size: cover;
+}
+.clone-icon img {
+    height: 80px;
+    width: 80px;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border: 1px solid black;
+    object-fit: cover;
+    position: fixed;
+    right: 50px;
+    animation-name: trialRoom;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 4;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes trialRoom {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(20deg);
+    }
+}
+
+/* trial room */
+
+.gender-icon img{
+    height:200px;
+    width:200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+.gender-icon img:hover{
+    border: 1px solid gray;
+}
+.gender p{
+    text-align: center;
+    font-weight: 900;
+    font-size: 4rem;
+}
+.gender-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+/* measurements page */
+.gender-logo{
+    height:100px;
+    width: 100px;
+    background-image: url("male.png");
+    background-size: cover;
+    margin: 5rem 0 0 5rem;
+}
+#female:active .gender-logo{
+    background-image: url("female.png");
+}
+.heading{
+    text-align: center;
+    position: relative;
+    bottom:5rem;
+}
+.options{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.option{
+    margin-top: 2rem;
+}
+.button{
+    position: absolute;
+    right: 200px;
+}
